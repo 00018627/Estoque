@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Controle de estoque</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="Index.CSS">
+    <link src="./CriarPN.html">
+    <script src="../JavaScript/Index.js" defer>
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="search-box">
+            <input type="text" class="search-text" placeholder="Pesquisar..."></input>
+            <button class="buttonlupa">
+                <img class="imgbutton" src="../Imagem/lupa.png" alt="">
+            </button>
+        </div>
+        <div class="textomenu">
+            <h1 id="text-menu">PRODUTOS E SERVIÇOS</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <input id="menu1" type="button" value="PRODUTOS" onclick="produtos()"></input>
+                    </li>
+                    <li>
+                        <input id="menu2" type="button" value="SERVIÇOS" onclick="servicos()"></input>
+                    </li>
+                    <li>
+                        <input id="menu3" type="button" value="AJUSTAR" onclick="ajustar()"></input>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+</body>
+
+<body>
+    <a>
+        <div class="buttonnew">
+            <a href="CriarPN.html">
+                <input id="buttontext" type="button" value="NOVO"></input>
+            </a>
+            <button class="buttonexluir">
+                <img class="imgexluir" src="../Imagem/excluir.png" alt="">
+            </button>
+        </div>
+    </a>
+    <div>
+        <table class="table">
+            <thead>
+                <th>ID</th>
+                <th>Partnumber</th>
+                <th>Local</th>
+                <th>Quantidade</th>
+            </thead>
+            <tbody id="tbody">
+                <script>
+                    document.getElementById("listaTabela");
+                </script>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+
+</html>

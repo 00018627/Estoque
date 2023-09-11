@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIAR NOVO PRODUTO</title>
+    <link rel="stylesheet" href="Index.CSS">
+    <script src="../JavaScript/Index.js"></script>
+    <link href="./Index.html">
+</head>
+
+<body>
+    <div id="container">
+        <div class="textomenucadastroPN">
+            <h1 id="text-menu">CRIAR NOVO PRODUTO</h1>
+        </div>
+        <div class="campodetexto">
+            <h2 id="textproduto">PRODUTO</h2>
+            <input id="adicionarproduto" type="text" placeholder="Insira o produto">
+            <h2 id="textlocal">LOCAL</h2>
+            <input id="adicionarlocal" type="text" placeholder="Insira o local">
+            <h2 id="textquantidade">QUANTIDADE</h2>
+            <input id="adicionarquantidade" type="number">
+        </div>
+        <nav id="menucadastropn">
+            <ul>
+                <input id="btnaddproduto" type="button" value="SALVAR" onclick="produto.adicionar()">
+                <a href="Index.html">
+                    <input id="btnvoltar" type="button" value="VOLTAR">
+                </a>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+
+</html>
