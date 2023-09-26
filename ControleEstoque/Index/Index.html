@@ -9,8 +9,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="Index.CSS">
     <link src="./CriarPN.html">
-    <script src="../JavaScript/Index.js" defer>
-    </script>
 </head>
 
 <body>
@@ -24,24 +22,25 @@
         <div class="textomenu">
             <h1 id="text-menu">PRODUTOS E SERVIÇOS</h1>
         </div>
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <input id="menu1" type="button" value="PRODUTOS" onclick="produtos()"></input>
-                    </li>
-                    <li>
-                        <input id="menu2" type="button" value="SERVIÇOS" onclick="servicos()"></input>
-                    </li>
-                    <li>
-                        <input id="menu3" type="button" value="AJUSTAR" onclick="ajustar()"></input>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    </div>
+    <nav class="botaomenu">
+        <ul>
+            <li>
+                <input id="menu1" type="button" value="PRODUTOS" onclick="produtos()"></input>
+            </li>
+            <li>
+                <input id="menu2" type="button" value="SERVIÇOS" onclick="servicos()"></input>
+            </li>
+            <li>
+                <input id="menu3" type="button" value="AJUSTAR" onclick="ajustar()"></input>
+            </li>
+        </ul>
+        <hr id="linhamenu">
+    </nav>
 </body>
 
 <body>
+    <div class="barraesquerda"></div>
     <a>
         <div class="buttonnew">
             <a href="CriarPN.html">
@@ -61,9 +60,7 @@
                 <th>Quantidade</th>
             </thead>
             <tbody id="tbody">
-                <script>
-                    document.getElementById("listaTabela");
-                </script>
+
             </tbody>
         </table>
     </div>

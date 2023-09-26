@@ -22,6 +22,7 @@ body {
     align-self: center;
     width: 35%;
     margin-top: 2px;
+
 }
 
 .search-text {
@@ -33,18 +34,20 @@ body {
 }
 
 .textomenu {
-    position: relative;
+    position: static;
     margin-top: 3px;
-    display: flex;
+    display:flex;
     border: 1px solid rgb(17, 76, 83);
     border-radius: 15px;
     width: 100%;
     background-color: rgb(17, 76, 83);
-    justify-content: center;
+    justify-content: left;
+    align-self: right;
 }
 
 #text-menu {
     color: #ffffff;
+    margin-left: 23%;
 }
 
 
@@ -60,14 +63,14 @@ ul {
 }
 
 #menu1 {
-    background-color: #66a85d;
+    background-color: #1ABF66;
     color: #ffffff;
     padding: 5px 8px;
-    border: 1px solid #66a85d;
+    border: 1px solid #1ABF66;
     border-radius: 8px;
     height: 60px;
     margin: 15px;
-    width: 100px;
+    width: 150px;
 
 }
 
@@ -79,7 +82,7 @@ ul {
     border-radius: 8px;
     height: 60px;
     margin: 15px;
-    width: 100px;
+    width: 150px;
 
 }
 
@@ -91,7 +94,7 @@ ul {
     border-radius: 8px;
     height: 60px;
     margin: 15px;
-    width: 100px;
+    width: 150px;
 }
 
 table {
@@ -118,18 +121,21 @@ tr:nth-child(even) {
     list-style-type: none;
     align-items: right;
     padding: 20px;
-    margin-top: -80px;
+    margin-top: -30px;
+    margin-left: 25%;
+    
+
 }
 
 #buttontext {
-    background-color: #66a85d;
+    background-color: #1ABF66;
     color: #ffffff;
-    border: 1px solid #66a85d;
+    border: 1px solid #1ABF66;
     border-radius: 8px;
     height: 60px;
     padding: 5px 8px;
     margin: 15px;
-    width: 100px;
+    width: 150px;
 }
 
 .tittletable {
@@ -243,4 +249,30 @@ tr:nth-child(even) {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     padding: 8px;
+}
+
+.barraesquerda {
+    width: 400px;
+    /* Largura da barra */
+    height: 100%;
+    /* Altura da barra (100% da altura do pai) */
+    background-color: #0F2414;
+    /* Cor da barra */
+    position: fixed;
+    /* Mantém a barra fixa na tela */
+    left: 0;
+    /* Alinha a barra à esquerda */
+    top: 71px;
+    /* Alinha a barra ao topo */
+    border-radius: 15px;
+}
+
+.botaomenu{
+    margin-left: 25%;
+}
+
+#linhamenu{
+    height: 2px;
+    background-color: #2F8109;
+    margin-top: -50px;
 }
