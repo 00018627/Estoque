@@ -103,3 +103,17 @@ class Produto {
 }
 
 var produto = new Produto();
+
+function search() {
+    let input = document.getElementById('searchbar').value.toLowerCase();
+    let rows = document.querySelectorAll('#tbody tr');
+
+    rows.forEach(row => {
+        let rowData = row.textContent.toLowerCase();
+        if (rowData.includes(input)) {
+            row.style.display = "table-row";
+        } else {
+            row.style.display = "none";
+        }
+    });
+}
